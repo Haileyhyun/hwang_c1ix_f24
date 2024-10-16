@@ -1,0 +1,9 @@
+body{
+    background-color: #363636;
+    text-align: center;
+    }
+    h1{font-family:Georgia, 'Times New Roman', Times, serif;
+        color: rgb(241, 241, 243);
+        font-size: 50px;
+        padding: 5px 5px 5px 5px;
+        }

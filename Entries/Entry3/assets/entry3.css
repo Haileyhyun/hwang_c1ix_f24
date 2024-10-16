@@ -1,0 +1,42 @@
+body{
+    background-color: #eeeeee;
+    text-align: center;
+    }
+    h1{font-family: Arial, Helvetica, sans-serif;
+        color: rgb(116, 116, 122);
+        font-size: 50px;
+        padding: 5px 5px 5px 5px;
+
+        .image:hover {
+            position: absolute;
+            width: 20%;
+            height: 20%;
+            top: 90%;
+            left: 50%;
+            background-color: #97c4f5;
+            border-radius: 200px;
+            transform: translate(-50%, -50%);
+            image:hover {
+            filter: opacity(50%);
+          }
+            background-color: #fff;
+            font-family: Helvetica;
+            margin: 0;
+        }
+        
+        o {left: 300%;}
+        
+        }
+
+        .marquee {
+            position: absolute;
+            white-space: nowrap;
+            -webkit-animation: rightThenLeft 4s linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @-webkit-keyframes rightThenLeft {
+            0%   {left: 20%;}
+            50%  {left: 80%;}
+            100% {left: 20%;}
+        }

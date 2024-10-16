@@ -11,18 +11,52 @@
     <h1>Babyhood 𐙚⋆˚</h1>
     <div>
 
-        <p class="heading">Click each image!</p>
+        <p class="heading">Click the first image!</p>
         <br>
         <hr>
         <br>
         <br>
 
         <div class="images">
-            <a href="/Users/jane/Desktop/hwang_c1ix_f24/Entries/Entry1/assets/linking1.html"><img src="assets/1.jpg" width="250" height="250"></a>
-            <img src="assets/2.png" width="150" height="150">
-            <img src="assets/3.png" width="300" height="200">
+            
+            <a href="/Users/jane/Desktop/hwang_c1ix_f24/Entries/Entry1/assets/linking1.html"><img src="assets/1.jpg" style="width:250px;height:250px;"></a>
+            <div class="container">
+                <img src="assets/2.png" width="150" height="150">
+                <img src="assets/3.png" width="150" height="250" class="image">
+                <div class="overlay">Collection of Calico Critters</div>
+              </div>
             <br>
-            <img src="assets/4.png" width="350" height="350">
+            <style>
+                .tooltip {
+                  position: relative;
+                  display: inline-block;
+                  border-bottom: 1px dotted black;
+                }
+                
+                .tooltip .tooltiptext {
+                  visibility: hidden;
+                  width: 120px;
+                  background-color: rgb(214, 208, 208);
+                  color: #fff;
+                  text-align: center;
+                  border-radius: 6px;
+                  padding: 50px 0;
+                  position: absolute;
+                  z-index: 1;
+                }
+                
+                .tooltip:hover .tooltiptext {
+                  visibility: visible;
+                }
+                </style>
+                <body style="text-align:center;">
+                
+                <div class="tooltip"><img src="assets/4.png" width="350" height="350">
+                  <span class="tooltiptext">A full house</span>
+                </div>
+            
+
+        
             <br>
             The toys I played with as a child weren't just objects—they were mirrors into worlds I could create, explore, and control.
             <br>
@@ -39,13 +73,11 @@
         </p>
         <hr>
         <br>
-        <input type="checkbox">     <a href="https://haileyhyun.github.io/hwang_c1ix_f24/Entries/Entry2/Entry2.html">Yes</a>
+        <input type="checkbox">     <a href="/Users/jane/Desktop/hwang_c1ix_f24/Entries/Entry2/Entry2.html">Yes</a>
         </a><input type="checkbox"> No
         <br>
         <br>
         <br>
-</body>
-    
 </body>
 
 </html>
