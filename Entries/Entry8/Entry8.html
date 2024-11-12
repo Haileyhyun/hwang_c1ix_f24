@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="assets/entry8.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div style="text-align:center">
+    <br>
+  <h1>My Pets</h1>
+  <br>
+  <hr>
+</div>
+
+<!-- The App Section -->
+<div class="container">
+  <div class="row">
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Guinea Pig</b></h1>
+      <h1 class="large-font" style="color:rgb(233, 215, 171);"><b>Pudding</b></h1>
+      <p>I had a guinea pig while I was an elementary school student. Usually, their life expectancy is about five to seven years, she lived more than ten years. She was the best friend of mine, she loved strawberries and vegetables. I did not have a phone at this time and I wish I have taken more pictures with/of her.</p>
+   <br>
+    </div>
+    <div class="column-33">
+        <img src="assets/1.jpg" width="500" height="400">
+    </div>
+  </div>
+</div>
+
+<!-- Clarity Section -->
+<div class="container" style="background-color:#f1f1f1">
+  <div class="row">
+    <div class="column-33">
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="assets/2.JPG" style="height:110%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="assets/3.jpg" style="width:100%">
+            </div>
+            <br>
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+    </div>
+    <div class="column-66">
+      <h1 class="xlarge-font"><b>Dogs</b></h1>
+      <h1 class="large-font" style="color:rgb(210, 168, 60);"><b>Lui and Elle</b></h1>
+      <p><span style="font-size:24px">My first dogs.</span> They were stray dogs on an island I lived in, my family decided to adopt them in 2020. They are siblings, they were three at first but the other one disappeared on the road so we could only take two to home. The one with the lighter colored fur is Elle, and a darker one is Lui.</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
