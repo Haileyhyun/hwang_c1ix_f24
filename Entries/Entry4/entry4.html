@@ -2,7 +2,8 @@
 <html>
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="/Users/jane/Desktop/hwang_c1ix_f24/Entries/Entry4/assets/entry4.css">
+      <link rel="stylesheet" type="text/css" href="assets/entry4.css">
+      <link rel="icon" type="image/png" href="assets/Frame.png">
       <style>
       * {
         box-sizing: border-box;
@@ -26,7 +27,6 @@
         padding: 0 4px;
       }
       
-      /* Create two equal columns that sits next to each other */
       .column {
         -ms-flex: 50%; /* IE 10 */
         flex: 50%;
@@ -38,7 +38,6 @@
         vertical-align: middle;
       }
       
-      /* Style the buttons */
       .btn {
         border: none;
         outline: none;
@@ -60,7 +59,6 @@
       </head>
       <body>
       
-      <!-- Header -->
       <div class="header" id="myHeader">
         <h1>Selfie Collection with My Favorite People</h1>
         <h5>CLICK THE BUTTONS</h5>
@@ -69,7 +67,6 @@
         <button class="btn" onclick="four()">4</button>
       </div>
       
-      <!-- Photo Grid -->
       <div class="row"> 
         <div class="column">
           <img src="assets/1.jpg" style="width:100%">
@@ -107,13 +104,10 @@
       </div>
       
       <script>
-      // Get the elements with class="column"
       var elements = document.getElementsByClassName("column");
       
-      // Declare a loop variable
       var i;
       
-      // Full-width images
       function one() {
           for (i = 0; i < elements.length; i++) {
           elements[i].style.msFlex = "100%";  // IE10
@@ -121,7 +115,6 @@
         }
       }
       
-      // Two images side by side
       function two() {
         for (i = 0; i < elements.length; i++) {
           elements[i].style.msFlex = "50%";  // IE10
@@ -129,7 +122,6 @@
         }
       }
       
-      // Four images side by side
       function four() {
         for (i = 0; i < elements.length; i++) {
           elements[i].style.msFlex = "25%";  // IE10
@@ -137,7 +129,6 @@
         }
       }
       
-      // Add active class to the current button (highlight it)
       var header = document.getElementById("myHeader");
       var btns = header.getElementsByClassName("btn");
       for (var i = 0; i < btns.length; i++) {
@@ -150,4 +141,14 @@
       </script>
       
       </body>
-      </html>
+    </div>
+    </p>
+    <hr>
+    <br>
+    <input type="checkbox">     <a href="/Users/jane/Desktop/hwang_c1ix_f24/Entries/Entry5/Entry5.html">Yes</a>
+    </a><input type="checkbox">no
+    <br>
+    <br>
+    <br>
+    </body>
+    </html>
