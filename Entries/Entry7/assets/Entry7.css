@@ -3,10 +3,12 @@ h2 {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(244, 138, 194);
     font-size: 70px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
 }
 .permanent-marker-regular {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
-    font-style: normal;
-  }
-  
+    font-style: normal;}

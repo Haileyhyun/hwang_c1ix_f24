@@ -2,7 +2,7 @@ body
 {background-color: #3c7eff;
   margin: 0;
   animation-name: bgColor-time-change;
-  animation-duration: 5s;
+  animation-duration: 10s;
   
   animation-fill-mode: forward;
   
