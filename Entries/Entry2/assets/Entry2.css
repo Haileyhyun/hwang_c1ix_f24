@@ -1,19 +1,6 @@
-body
-{background-color: #3c7eff;
-  margin: 0;
-  animation-name: bgColor-time-change;
-  animation-duration: 10s;
-  
-  animation-fill-mode: forward;
-  
-  animation-iteration-count: infinite;  
-  
 
+.first {
+  position: absolute;
+  top: 80px;
+  left: 1200px;
 }
-
-@keyframes bgColor-time-change {
-  0%   {background-color: rgb(244, 192, 192);}
-  25%  {background-color: rgb(240, 215, 168);}
-  50%  {background-color: rgb(242, 242, 173);}
-  75%  {background-color: rgb(191, 247, 191);}
-  100% {background-color: rgb(188, 188, 245);}
