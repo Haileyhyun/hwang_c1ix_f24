@@ -3,105 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/entry5.css">
-    <link rel="icon" type="image/png" href="assets/Frame.png">
-    <title>Movies of My Childhood</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Geocities-Style Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(to bottom, #ffe4e1, #87ceeb);
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: #000080;
+            text-align: center;
+        }
 
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  align-items: center;
-}
+        h1 {
+            font-size: 3em;
+            color: #ff4500;
+            text-shadow: 2px 2px 5px yellow;
+            margin-bottom: 10px;
+        }
 
-.bg {
-  
-  background-image: url("assets/2.jpg");
-  height: 100%; 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-h3{font-family: "Patrick Hand", cursive;
-                    font-weight: 400;
-                    font-style: normal;
-                    text-align: center;
+        h2 {
+            color: #4682b4;
+        }
 
-                    .container {
-  position: relative;
-  width: 50%;
-}
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            border: 3px dashed #ff1493;
+            padding: 20px;
+            box-shadow: 0 0 20px #000;
+        }
 
-.image {
-  width: 100%;
-  height: auto;
-}
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            background-color: #32cd32;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border: 2px solid #006400;
+            border-radius: 5px;
+            transition: transform 0.2s;
+        }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #d2d2d2;
-}
+        .button:hover {
+            background-color: #00ff7f;
+            color: #006400;
+            transform: scale(1.1);
+        }
 
-.container:hover .overlay {
-  opacity: 1;
-}
+        .marquee {
+            font-size: 1.2em;
+            background: #ffffe0;
+            color: #ff69b4;
+            border: 2px solid #ffa07a;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 700px;
+            animation: scrollText 10s linear infinite;
+            white-space: nowrap;
+            overflow: hidden;
+        }
 
-.text {
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-</style>
+        @keyframes scrollText {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 4px ridge #ff4500;
+        }
+
+        img:hover {
+            transform: rotate(15deg);
+            border-color: #32cd32;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #2f4f4f;
+        }
+    </style>
 </head>
 <body>
+    <h1>Welcome to My Ghibli Fansite!</h1>
+    <h2>Relive the Magic</h2>
 
-<div class="bg"></div>
+    <div class="container">
+        <p>Click the buttons below to explore:</p>
+        <a href="#" class="button">Gallery</a>
+        <a href="#" class="button">About Us</a>
+        <a href="#" class="button">Contact</a>
 
-<body>
-    <h1>Ghibli Studio *☂︎*̣</h1>
-    <div>
-        <hr>
-        <div class="images">
-                <img src="assets/1.jpg" style="width:350px;height:250px;">
-                <br>
-                <div class="container">
-                  <img src="assets/1.gif"style="width:350px;height:250px;"class="center">
-                  <div class="overlay">
-                    <div class="text">Growing Tree Dance</div>
-                  </div>
-                </div>
-            <br>
-            <h3>I watched every film from Ghibli Studio. My favorite is The Secret World of Arrietty.</h3>
-            ╱◥▦◣
-            <br>
-             │田│ 田│
-            <br>
-            <br>
+        <div class="marquee">
+            "Ghibli is life! Totoro is love! Enjoy your stay at my awesome site!"
         </div>
+
+        <img src="image1.jpg" alt="Totoro">
+        <img src="image2.jpg" alt="Spirited Away">
+        <img src="image3.jpg" alt="Howl's Moving Castle">
     </div>
-        </p>
-        <hr>
-        <br>
-        <input type="checkbox">     <a href="/Users/jane/Desktop/hwang_c1ix_f24/Entries/Entry6/Entry6.html">Yes</a>
-        </a><input type="checkbox"> No
-        <br>
-        <br>
-        <br>
+
+    <footer>
+        <p>&copy; 2024 Ghibli Fansite. Made with &lt;3 and nostalgia.</p>
+    </footer>
+</body>
+<div class="additional-content">
+  <h2>Explore More!</h2>
+  <p>Here are some more things to check out about Studio Ghibli:</p>
+  <ul>
+      <a href="#" class="button">Character Profiles</a>
+      <a href="#" class="button">Movie Soundtracks</a>
+      <a href="#" class="button">Behind the Scenes</a>
+  </ul>
+
+  <div style="margin-top: 20px;">
+      <img src="image4.jpg" alt="Ghibli Art 1">
+      <img src="image5.jpg" alt="Ghibli Art 2">
+      <img src="image6.jpg" alt="Ghibli Art 3">
+  </div>
+
+  <blockquote style="background: #ffe4b5; border-left: 4px solid #ff6347; margin: 20px; padding: 10px;">
+      "Sometimes you have to fight for the things that are worth fighting for." — The Wind Rises
+  </blockquote>
+
+  <p style="margin-top: 20px;">Dive deeper into the magic of Studio Ghibli and discover your favorite moments!</p>
+</div>
+
+<footer>
+  <p>&copy; 2024 Ghibli Fansite. Made with &lt;3 and nostalgia.</p>
+</footer>
+</body>
+</html>
+
+</html>

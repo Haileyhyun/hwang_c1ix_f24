@@ -1,7 +1,26 @@
-.phone {
-  height: 500px;
-  width: 550px;
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background: url('your-background-image.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #eee8d5;
+  color: #586e75;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  transition: background 0.5s;
 }
-#title {
-  background-color: #2978b5;
+
+.centered {
+      font-size: 50px;
+      color: #b58900;
+      text-shadow: 2px 2px #eee8d5;
+}
+
+a:hover {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(242, 246, 165);
 }
