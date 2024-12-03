@@ -1,6 +1,6 @@
-
 .first {
   position: absolute;
-  top: 80px;
-  left: 1200px;
+  top: 140px;
+  left: 450px;
+  position: fixed;
 }
