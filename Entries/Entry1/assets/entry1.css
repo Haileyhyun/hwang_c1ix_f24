@@ -5,76 +5,24 @@ body {
 }
 
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(140, 176, 144);
-    font-size: 70px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 70px;
+  color: rgb(0, 0, 0);
 }
 
-.heading {
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
+.centered {
+  position: absolute;
+  top: 210px;
+  left: 230px;
+  position: fixed;
 }
 
 .images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    * {box-sizing: border-box}
-
-    .container {
-      position: relative;
-      width: 50%;
-      max-width: 300px;
-    }
-    
-    /* Make the image to responsive */
-    .image {
-      display: block;
-      width: 100%;
-    }
-    
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.5); 
-      color: #f1f1f1;
-      width: 100%;
-      transition: .5s ease;
-      opacity:0;
-      color: white;
-      font-size: 20px;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .container:hover .overlay {
-      opacity: 1;
-    }
+    position: fixed;
   }
   
-  .topnav {
-    overflow: hidden;
-    background-color: #eeeeee;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #e4e4e4;
-    color: black;
-  }
-  
-  .topnav a.active {
-    color: rgb(0, 0, 0);
+  img:hover {
+    opacity: 0.5;
   }
 
   #content {
@@ -85,3 +33,73 @@ h1 {
     top: 700px;
     left: 78px;
     position: fixed;}
+
+    .first {
+      position: absolute;
+      top: 5px;
+      left: 220px;
+      position: fixed;
+  }
+  
+  .second {
+      position: absolute;
+      top: 4px;
+      left: 280px;
+      position: fixed;
+  }
+  
+  .third {
+      position: absolute;
+      top: -14px;
+      left: 305px;
+      position: fixed;
+  }
+  
+  .fourth {
+      position: absolute;
+      top: 8px;
+      left: 390px;
+      position: fixed;
+  }
+  
+  .fifth {
+      position: absolute;
+      top: 2.5px;
+      left: 455px;
+      position: fixed;
+  }
+  
+  .sixth {
+      position: absolute;
+      top: 10px;
+      left: 505px;
+      position: fixed;
+  }
+  
+  .seventh {
+      position: absolute;
+      top: 5px;
+      left: 573px;
+      position: fixed;
+  }
+  
+  .eighth {
+      position: absolute;
+      top: -20px;
+      left: 598px;
+      position: fixed;
+  }
+  
+  .ninth {
+      position: absolute;
+      top: 12px;
+      left: 682px;
+      position: fixed;
+  }
+  
+  .tenth {
+      position: absolute;
+      top: 10px;
+      left: 730px;
+      position: fixed;
+  }
