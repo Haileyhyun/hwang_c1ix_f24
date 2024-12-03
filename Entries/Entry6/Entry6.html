@@ -3,147 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retro Fun Zone</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background: #000 url('bg-stars.gif') repeat;
-            font-family: "Courier New", monospace;
-            color: #00ff00;
-        }
-
-        h1 {
-            font-size: 3em;
-            color: #ff00ff;
-            text-align: center;
-            text-shadow: 2px 2px 5px #ff0000;
-            margin-top: 20px;
-        }
-
-        .rainbow-border {
-            padding: 20px;
-            border: 10px solid;
-            border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
-            margin: 20px;
-        }
-
-        .container {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .floating-element {
-            position: absolute;
-            animation: floatAnimation 5s infinite;
-        }
-
-        .button {
-            display: inline-block;
-            margin: 10px;
-            padding: 15px 25px;
-            background-color: #ff69b4;
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 50%;
-            box-shadow: 0 0 10px 2px #ff69b4;
-            transition: transform 0.3s;
-        }
-
-        .button:hover {
-            background-color: #00ffff;
-            box-shadow: 0 0 20px 4px #00ffff;
-            transform: scale(1.2);
-        }
-
-        .interactive-img {
-            margin: 20px auto;
-            width: 100px;
-            animation: spin 10s linear infinite;
-            transform-origin: center;
-        }
-
-        .interactive-img:hover {
-            animation-play-state: paused;
-        }
-
-        .clickable-text {
-            color: yellow;
-            cursor: pointer;
-            animation: blink 1s step-end infinite alternate;
-        }
-
-        .clickable-text:hover {
-            color: #ff6347;
-        }
-
-        @keyframes blink {
-            50% {
-                opacity: 0;
-            }
-        }
-
-        @keyframes floatAnimation {
-            0% {
-                top: 10px;
-                left: 10px;
-            }
-            50% {
-                top: 50px;
-                left: 50px;
-            }
-            100% {
-                top: 10px;
-                left: 10px;
-            }
-        }
-
-        @keyframes spin {
-            from {
-                transform: rotate(0deg);
-            }
-            to {
-                transform: rotate(360deg);
-            }
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="assets/entry6.css">
+    <title>Books</title>
+    
 </head>
 <body>
-    <h1>Welcome to the Retro Fun Zone!</h1>
     <body style="display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 100vh; overflow-y: auto;">
-      <h1>Welcome to the Retro Fun Zone!</h1>
+      <br>
+      <br>
+      <br>
+      <h1>Welcome to the children books!</h1>
   
       <div class="rainbow-border">
-          <p>Experience the ultimate blast from the past with flashing text, animated buttons, and floating objects!</p>
-      </div>
-  
-      <div class="container">
-          <a href="#" class="button">Magic Button</a>
-          <a href="#" class="button">Another Button</a>
-  
-          <p class="clickable-text" onclick="alert('You discovered the secret!')">Click Me for a Surprise!</p>
-  
-          <img src="spinning-disc.png" alt="Spinning Disc" class="interactive-img">
-  
-          <div class="floating-element" style="top: 20px; left: 20px;">
-              <img src="star-icon.png" alt="Star Icon" width="50">
-          </div>
-  
+          <p>Here are the books I read when I was a child, they became greatful memories.</p>
           
       </div>
       <div class="additional-content" style="text-align: center; padding: 20px;">
-          <h2>More Retro Goodies!</h2>
-          <p>Scroll down to uncover hidden treasures and more interactive elements:</p>
+          <h2>Top books!</h2>
+          <p>I liked when my mom used to read these books before I go to bed.</p>
           <div style="margin-top: 20px;">
-              <img src="retro-art1.png" alt="Retro Art 1" width="150">
-              <img src="retro-art2.png" alt="Retro Art 2" width="150">
-              <img src="retro-art3.png" alt="Retro Art 3" width="150">
+              <img src="assets/Giving.jpg" alt="Retro Art 1" width="200">
+              <img src="assets/web.jpg" alt="Retro Art 2" width="200">
+              <img src="assets/a.jpg" alt="Retro Art 3" width="200">
           </div>
+
+          <div class="container">
+            <a href="assets/linking2.html" class="button">The Giving Tree</a>
+            <a href="assets/linking.html" class="button">Charlotte's Web</a>
+            <a href="assets/linking1.html" class="button">Peter Rabbit Tale</a>
+    
+            <p class="clickable-text" onclick="alert('This is a book that I am currently reading!')">What about this book?</p>
+    
+            <img src="assets/713jIoMO3UL.jpg" alt="Spinning Disc" class="interactive-img">
+    
+            <div class="floating-element" style="top: 20px; left: 20px;">
+                <img src="assets/Frame.png" alt="main page" width="50">
+            </div>
+
           <div style="margin-top: 20px;">
-              <marquee behavior="scroll" direction="left" style="color: cyan; font-size: 1.5em;">Retro vibes all the way! Don’t stop scrolling!</marquee>
+              <marquee behavior="scroll" direction="left" style="color: cyan; font-size: 1.5em;">Any other recommendations you have?</marquee>
           </div>
-          <a href="#" class="button">Explore More</a>
+          <a href="https://haileyhyun.github.io/hwang_c1ix_f24/Entries/Entry7/Entry7.html" class="button">Next</a>
       </div>
   </body>
   </html>
