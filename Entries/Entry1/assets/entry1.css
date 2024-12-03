@@ -76,3 +76,11 @@ h1 {
   .topnav a.active {
     color: rgb(0, 0, 0);
   }
+
+  #content {
+    position: relative;
+}
+#content img {
+    position: absolute;
+    top: 10px;
+    right: 10px;}
