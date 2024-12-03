@@ -40,3 +40,12 @@ body{
             50%  {left: 80%;}
             100% {left: 20%;}
         }
+
+        #content {
+            position: relative;
+          }
+          #content img {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            position: fixed;}

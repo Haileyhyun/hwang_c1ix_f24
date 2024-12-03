@@ -4,3 +4,11 @@
   left: 450px;
   position: fixed;
 }
+#content {
+  position: relative;
+}
+#content img {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  position: fixed;}

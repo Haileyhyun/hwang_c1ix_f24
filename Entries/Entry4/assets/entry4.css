@@ -58,4 +58,12 @@ body{
           max-width: 80%;
           border: 5px solid #ddd;
         }
+        #content {
+          position: relative;
+        }
+        #content img {
+          position: absolute;
+          bottom: 30px;
+          left: 53px;
+          position: fixed;}
         
