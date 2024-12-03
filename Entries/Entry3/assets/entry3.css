@@ -31,7 +31,7 @@ body{
         .marquee {
             position: absolute;
             white-space: nowrap;
-            -webkit-animation: rightThenLeft 4s linear;
+            -webkit-animation: rightThenLeft 10s linear;
             animation-iteration-count: infinite;
         }
         
