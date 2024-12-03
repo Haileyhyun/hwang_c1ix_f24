@@ -1,5 +1,4 @@
 body{
-    background-color: #eeeeee;
     text-align: center;
     }
     h1{font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +7,7 @@ body{
         padding: 5px 5px 5px 5px;
 
         .image:hover {
-            position: absolute;
+            align-items: center;
             width: 20%;
             height: 20%;
             top: 90%;
@@ -36,8 +35,8 @@ body{
         }
         
         @-webkit-keyframes rightThenLeft {
-            0%   {left: 20%;}
-            50%  {left: 80%;}
+            0%   {left: 15%;}
+            50%  {left: 70%;}
             100% {left: 20%;}
         }
 
