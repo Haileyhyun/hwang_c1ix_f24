@@ -17,6 +17,11 @@ h1 {
   position: fixed;
 }
 
+a:hover {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(141, 45, 126);
+}
+
 .images {
     position: fixed;
   }
@@ -103,3 +108,67 @@ h1 {
       left: 730px;
       position: fixed;
   }
+
+  .one {
+    position: absolute;
+    top: 350px;
+    left: 330px;
+    position: fixed;
+}
+
+.two {
+  position: absolute;
+  top: 365px;
+  left: 610px;
+  position: fixed;
+}
+
+.three {
+  position: absolute;
+  top: 555px;
+  left: 490px;
+  position: fixed;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 250px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
+.text {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight:lighter;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+}
