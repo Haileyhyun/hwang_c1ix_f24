@@ -30,61 +30,7 @@
 	<a href="https://haileyhyun.github.io/hwang_c1ix_f24/"><img src="assets/6 copy 2.png" width="50" height="50"></a>
 </div>
 
-<body>
-    <div class="img-container">
-      <img src="assets/12.png" alt="Zoomable Image" class="img-zoom">
-      <div class="zoom-lens"></div>
-      <div class="zoom-result"></div>
-    </div>
-  
-    <script>
-      // Get the image, lens, and result elements
-      const img = document.querySelector('.img-zoom');
-      const lens = document.querySelector('.zoom-lens');
-      const result = document.querySelector('.zoom-result');
-  
-      // Set up the zoom result background image
-      result.style.backgroundImage = `url('${img.src}')`;
-  
-      // When the mouse is moved over the image, run the zoom function
-      img.addEventListener('mousemove', zoom);
-      lens.addEventListener('mousemove', zoom);
-  
-      // Show the magnifier when hovering over the image
-      img.addEventListener('mouseenter', () => {
-        lens.style.display = 'block';
-        result.style.display = 'block';
-      });
-  
-      // Hide the magnifier when mouse leaves the image
-      img.addEventListener('mouseleave', () => {
-        lens.style.display = 'none';
-        result.style.display = 'none';
-      });
-  
-      function zoom(e) {
-        const imgRect = img.getBoundingClientRect();
-        const lensRect = lens.getBoundingClientRect();
-  
-        // Calculate the lens position
-        let x = e.clientX - imgRect.left - lensRect.width / 2;
-        let y = e.clientY - imgRect.top - lensRect.height / 2;
-  
-        // Prevent the lens from going outside the image
-        if (x > imgRect.width - lensRect.width) x = imgRect.width - lensRect.width;
-        if (x < 0) x = 0;
-        if (y > imgRect.height - lensRect.height) y = imgRect.height - lensRect.height;
-        if (y < 0) y = 0;
-  
-        lens.style.left = `${x}px`;
-        lens.style.top = `${y}px`;
-  
-        // Calculate the background position of the zoom result
-        const zoomFactor = 5; // How much to zoom in
-        result.style.backgroundPosition = `-${x * zoomFactor}px -${y * zoomFactor}px`;
-      }
-    </script>
-  
+
 <body>
         <div class="first">
             <img src="assets/12.png" width="600" height="480"></div>
