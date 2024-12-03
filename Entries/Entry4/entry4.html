@@ -1,154 +1,46 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" type="text/css" href="assets/entry4.css">
-      <link rel="icon" type="image/png" href="assets/Frame.png">
-      <style>
-      * {
-        box-sizing: border-box;
-      }
-      
-      body {
-        margin: 0;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-      }
-      
-      .header {
-        text-align: center;
-        padding: 32px;
-      }
-      
-      .row {
-        display: -ms-flexbox; /* IE 10 */
-        display: flex;
-        -ms-flex-wrap: wrap; /* IE 10 */
-        flex-wrap: wrap;
-        padding: 0 4px;
-      }
-      
-      .column {
-        -ms-flex: 50%; /* IE 10 */
-        flex: 50%;
-        padding: 0 4px;
-      }
-      
-      .column img {
-        margin-top: 8px;
-        vertical-align: middle;
-      }
-      
-      .btn {
-        border: none;
-        outline: none;
-        padding: 10px 16px;
-        background-color: #f1f1f1;
-        cursor: pointer;
-        font-size: 18px;
-      }
-      
-      .btn:hover {
-        background-color: #ddd;
-      }
-      
-      .btn.active {
-        background-color: #666;
-        color: white;
-      }
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/entry4.css">
+    <link rel="icon" type="image/png" href="assets/Frame.png">
+    <title>Selfies</title>
+</head>
+<style>
+   body, html {
+      height: 100%;
+      margin: 0;
+    }
+    
+    body {
+  background-image: url('assets/26.png');
+  background-size: 100%;
+  background-repeat:repeat;
+  background-attachment: fixed;
+}
+
+
+  
       </style>
-      </head>
-      <body>
-      
-      <div class="header" id="myHeader">
-        <h1>Selfie Collection with My Favorite People</h1>
-        <h5>CLICK THE BUTTONS</h5>
-        <button class="btn" onclick="one()">1</button>
-        <button class="btn active" onclick="two()">2</button>
-        <button class="btn" onclick="four()">4</button>
-      </div>
-      
-      <div class="row"> 
-        <div class="column">
-          <img src="assets/1.jpg" style="width:100%">
-          <img src="assets/2.jpg" style="width:100%">
-          <img src="assets/3.jpg" style="width:100%">
-          <img src="assets/4.jpg" style="width:100%">
-          <img src="assets/5.jpg" style="width:100%">
-          <img src="assets/6.jpg" style="width:100%">
-          <img src="assets/7.jpg" style="width:100%">
-          <img src="assets/20.jpg" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="assets/15.jpg" style="width:100%">
-          <img src="assets/14l.jpg" style="width:100%">
-          <img src="assets/12.jpg" style="width:100%">
-          <img src="assets/22.jpg" style="width:100%">
-          <img src="assets/10.jpg" style="width:100%">
-          <img src="assets/9.jpg" style="width:100%">
-        </div>  
-        <div class="column">
-          <img src="assets/13.jpg" style="width:100%">
-          <img src="assets/8.jpg" style="width:100%">
-          <img src="assets/16.jpg" style="width:100%">
-          <img src="assets/17.jpg" style="width:100%">
-          <img src="assets/18.jpg" style="width:100%">
-          <img src="assets/19.jpg" style="width:100%">
-        </div>
-        <div class="column">
-          <img src="assets/21.jpg" style="width:100%">
-          <img src="assets/11.jpg" style="width:100%">
-          <img src="assets/23.jpg" style="width:100%">
-          <img src="assets/24.jpg" style="width:100%">
-          <img src="assets/25.jpg" style="width:100%">
-        </div>
-      </div>
-      
-      <script>
-      var elements = document.getElementsByClassName("column");
-      
-      var i;
-      
-      function one() {
-          for (i = 0; i < elements.length; i++) {
-          elements[i].style.msFlex = "100%";  // IE10
-          elements[i].style.flex = "100%";
-        }
-      }
-      
-      function two() {
-        for (i = 0; i < elements.length; i++) {
-          elements[i].style.msFlex = "50%";  // IE10
-          elements[i].style.flex = "50%";
-        }
-      }
-      
-      function four() {
-        for (i = 0; i < elements.length; i++) {
-          elements[i].style.msFlex = "25%";  // IE10
-          elements[i].style.flex = "25%";
-        }
-      }
-      
-      var header = document.getElementById("myHeader");
-      var btns = header.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-      </script>
-      
-      </body>
-    </div>
-    </p>
-    <hr>
-    <br>
-    <input type="checkbox">     <a href="https://haileyhyun.github.io/hwang_c1ix_f24/Entries/Entry5/Entry5.html">Yes</a>
-    </a><input type="checkbox">no
-    <br>
-    <br>
-    <br>
+    </head>
+    <body>
+      <div class="first">
+        <a href="https://haileyhyun.github.io/hwang_c1ix_f24/Entries/Entry1/entry1.html"><img src="assets/28.png" width="60" height="60"></a></div>
+          <div class="second">
+          <img src="assets/28.png" width="60" height="60"></div>
+          <div class="third">
+            <img src="assets/28.png" width="60" height="60"></div>
+            <div class="fourth">
+              <img src="assets/28.png" width="60" height="60"></div>
+              <div class="fifth">
+                <img src="assets/29.png" width="70" height="70"></div>
+                <script>
+                  function showSecondImage() {
+                    // Display the second image
+                    document.getElementById('secondImage').style.display = 'block';
+                  }
+                </script>
     </body>
     </html>
+    

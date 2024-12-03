@@ -12,3 +12,50 @@ body{
               background-color: rgb(255, 255, 255);
             }
           }
+
+          .first {
+            position: absolute;
+            top: 60px;
+            left: 50px;
+            position: fixed;
+        }
+        
+        .second {
+            position: absolute;
+            top: 150px;
+            left: 50px;
+            position: fixed;
+        }
+        
+        .third {
+            position: absolute;
+            top: 240px;
+            left: 50px;
+            position: fixed;
+        }
+        
+        .fourth {
+            position: absolute;
+            top: 330px;
+            left: 50px;
+            position: fixed;
+        }
+        
+        .fifth {
+            position: absolute;
+            top: 420px;
+            left: 45px;
+            position: fixed;
+        }
+
+        img:hover {
+          opacity: 0.5;
+        }
+
+        #secondImage {
+          display: none;
+          margin-top: 20px;
+          max-width: 80%;
+          border: 5px solid #ddd;
+        }
+        

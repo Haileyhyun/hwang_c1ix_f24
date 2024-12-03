@@ -1,132 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="assets/entry8.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="assets/1.png">
-    <title>Pets</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahjong Theme</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #d1c4b0; /* Mahjong tile color */
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
 
+    h1 {
+      font-size: 3em;
+      color: #2e7d32; /* Mahjong green */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    }
+
+    .tile-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .tile {
+      width: 80px;
+      height: 120px;
+      background-color: #ffffff;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5em;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .tile:hover {
+      transform: scale(1.1);
+      background-color: #2e7d32;
+      color: white;
+    }
+
+    .tile img {
+      max-width: 60%;
+      max-height: 60%;
+    }
+
+    .tile-text {
+      font-size: 2em;
+      color: #333;
+    }
+
+    .tile-text:hover {
+      color: white;
+      font-weight: bold;
+    }
+
+    .instructions {
+      margin-top: 40px;
+      font-size: 1.2em;
+      color: #2e7d32;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 1.2em;
+      color: #333;
+    }
+  </style>
+</head>
 <body>
 
-<div style="text-align:center">
-    <br>
-  <h1>My Pets</h1>
-  <br>
-  <hr>
-</div>
+  <h1>Mahjong Tile Challenge</h1>
 
-<!-- The App Section -->
-<div class="container">
-  <div class="row">
-    <div class="column-66">
-      <h1 class="xlarge-font"><b>Guinea Pig</b></h1>
-      <h1 class="large-font" style="color:rgb(225, 201, 141);"><b>Pudding</b></h1>
-      <p>I had a guinea pig while I was an elementary school student. Usually, their life expectancy is about five to seven years, she lived more than ten years. She was the best friend of mine, she loved strawberries and vegetables. I did not have a phone at this time and I wish I have taken more pictures with/of her.</p>
-   <br>
+  <div class="tile-container">
+    <div class="tile" onclick="alert('You clicked the Bamboo Tile!')">
+      <div class="tile-text">♠️</div>
     </div>
-    <div class="column-33">
-        <img src="assets/1.jpg" width="500" height="400">
+    <div class="tile" onclick="alert('You clicked the Circle Tile!')">
+      <div class="tile-text">⚪</div>
+    </div>
+    <div class="tile" onclick="alert('You clicked the Character Tile!')">
+      <div class="tile-text">🀄</div>
+    </div>
+    <div class="tile" onclick="alert('You clicked the Dragon Tile!')">
+      <div class="tile-text">🐉</div>
     </div>
   </div>
-</div>
 
-<!-- Clarity Section -->
-<div class="container" style="background-color:#f1f1f1">
-  <div class="row">
-    <div class="column-33">
-        <div class="slideshow-container">
-
-            <div class="mySlides fade">
-              <img src="assets/2.JPG" style="height:110%">
-            </div>
-            
-            <div class="mySlides fade">
-              <img src="assets/3.jpg" style="width:100%">
-            </div>
-            <br>
-            <a class="prev" onclick="plusSlides(-1)">❮</a>
-            <a class="next" onclick="plusSlides(1)">❯</a>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot" onclick="currentSlide(1)"></span> 
-              <span class="dot" onclick="currentSlide(2)"></span> 
-              <span class="dot" onclick="currentSlide(3)"></span> 
-            </div>
-            
-            <script>
-            let slideIndex = 1;
-            showSlides(slideIndex);
-            
-            function plusSlides(n) {
-              showSlides(slideIndex += n);
-            }
-            
-            function currentSlide(n) {
-              showSlides(slideIndex = n);
-            }
-            
-            function showSlides(n) {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              if (n > slides.length) {slideIndex = 1}    
-              if (n < 1) {slideIndex = slides.length}
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-            }
-            </script>
-            
-    </div>
-    <div class="column-66">
-      <h1 class="xlarge-font"><b>Dogs</b></h1>
-      <h1 class="large-font" style="color:rgb(210, 168, 60);"><b>Lui and Elle</b></h1>
-      <p><span style="font-size:24px"><body>
-
-        <ul id="myUL">
-          <li><span class="box">Click here to read more about my dogs!</span>
-            <ul class="nested">
-              <li><span class="box">My first dogs.</span>
-                <ul class="nested">
-                  <li><span class="box">They were stray dogs on an island I lived in.</span>
-                    <ul class="nested">
-                        <li>The one with the lighter colored fur is Elle.</span>
-                        <li>The darker one is Lui.</li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>  
-            </ul>
-          </li>
-        </ul>
-        
-        <script>
-        var toggler = document.getElementsByClassName("box");
-        var i;
-        
-        for (i = 0; i < toggler.length; i++) {
-          toggler[i].addEventListener("click", function() {
-            this.parentElement.querySelector(".nested").classList.toggle("active");
-            this.classList.toggle("check-box");
-          });
-        }
-        </script>
-        
-        </body>
-    </div>
+  <div class="instructions">
+    <p>Click any of the Mahjong tiles above to interact with the game. The game simulates the feel of Mahjong with its traditional tile designs. Try clicking to see different responses for each tile.</p>
   </div>
-</div>
+
+  <div class="footer">
+    <p>© 2024 Mahjong Fun - A Digital Mahjong Experience</p>
+  </div>
+
 </body>
 </html>
