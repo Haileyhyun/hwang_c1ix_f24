@@ -121,16 +121,11 @@ h2 {
     100% { transform: translateX(-100%); }
 }
 
-img {
-    width: 300px;
-    height: 200px;
-    margin: 10px;
-    border: 4px ridge #ff4500;
-}
-
 img:hover {
     transform: rotate(15deg);
     border-color: #32cd32;
+    margin: 10px;
+    border: 4px ridge #ff4500;
 }
 
 footer {
@@ -195,3 +190,12 @@ footer {
   font-size: 1.2em;
   color: #333;
 }
+
+#content {
+  position: relative;
+}
+#content img {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  position: fixed;}

@@ -12,3 +12,12 @@ h2 {
     font-family: "Permanent Marker", cursive;
     font-weight: 400;
     font-style: normal;}
+
+    #content {
+        position: relative;
+      }
+      #content img {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        position: fixed;}
