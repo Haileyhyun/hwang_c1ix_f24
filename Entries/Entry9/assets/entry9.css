@@ -2,9 +2,6 @@ h1{font-family: "Pixelify Sans", sans-serif;}
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background: url('your-background-image.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color: #eee8d5;
   color: #586e75;
   margin: 0;
   padding: 0;
@@ -15,6 +12,26 @@ body {
   height: 100vh;
   transition: background 0.5s;
 }
+
+body {
+  background-color:  #eae6d2;
+  font-family:  monospace;
+  padding: 50px;
+}
+/* If the browser window is smaller than 650px, the background color will change to black and the text to white: */
+@media (max-width: 650px) {
+  body {
+    background-color: black;
+    color:  white;
+  }
+}
+/* If the browser window is shorter than 650px, the background will turn orange */
+@media (max-height: 650px) {
+  body {
+    background-color: whitesmoke;
+  }
+}
+
 
 .centered {
       font-size: 50px;
