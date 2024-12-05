@@ -21,55 +21,51 @@
 <body>
   <a><h1>Online Games</h1></a>
 
-  <div class="tile-container" id="tileContainer">
-    <div class="tile" id="tile1">
-      <div class="tile-text">♠️</div>
+  <body>
+    <div class="tile-container" id="tileContainer">
+      <div class="flip-card" id="tile1">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            ♠️
+          </div>
+          <div class="flip-card-back">
+            Spade Tile
+          </div>
+        </div>
+      </div>
+  
+      <div class="flip-card" id="tile2">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            ⚪
+          </div>
+          <div class="flip-card-back">
+            Circle Tile
+          </div>
+        </div>
+      </div>
+  
+      <div class="flip-card" id="tile3">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            🀄
+          </div>
+          <div class="flip-card-back">
+            Red Dragon Tile
+          </div>
+        </div>
+      </div>
+      <div class="flip-card" id="tile4">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            🐉
+          </div>
+          <div class="flip-card-back">
+            Green Dragon Tile
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="tile" id="tile2">
-      <div class="tile-text">⚪</div>
-    </div>
-    <div class="tile" id="tile3">
-      <div class="tile-text">🀄</div>
-    </div>
-    <div class="tile" id="tile4">
-      <div class="tile-text">🐉</div>
-    </div>
-  </div>
-
-  <script>
-    // Dynamically update tile contents and add interactivity
-    const tileContainer = document.getElementById('tileContainer');
-
-    document.getElementById('tile1').onclick = () => {
-      alert('You clicked the Spade Tile!');
-      addImageToTile('tile1', 'assets/1.jpg');
-    };
-
-    document.getElementById('tile2').onclick = () => {
-      alert('You clicked the Circle Tile!');
-      addImageToTile('tile2', 'assets/circle.png');
-    };
-
-    document.getElementById('tile3').onclick = () => {
-      alert('You clicked the Red Dragon Tile!');
-      addImageToTile('tile3', 'assets/red_dragon.png');
-    };
-
-    document.getElementById('tile4').onclick = () => {
-      alert('You clicked the Green Dragon Tile!');
-      addImageToTile('tile4', 'assets/green_dragon.png');
-    };
-
-    // Add new tiles dynamically
-    const newTile = document.createElement('div');
-    newTile.className = 'tile';
-    newTile.innerHTML = '<div class="tile-text">🌟</div>';
-    newTile.onclick = () => {
-      alert('You clicked the Star Tile!');
-      addImageToTile('tileContainer', 'assets/2.png');
-    };
-    tileContainer.appendChild(newTile);
-  </script>
 </body>
 <body>
 <div id="content"> 
