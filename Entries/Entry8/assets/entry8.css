@@ -92,3 +92,12 @@ a:hover {
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: rgb(0, 0, 0);
 }
+
+#content {
+  position: relative;
+}
+#content img {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  position: fixed;}
