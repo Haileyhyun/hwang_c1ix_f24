@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="assets/entry8.css">
   <link rel="icon" type="image/png" href="assets/1.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
   <title>Games</title>
   <style>
     
@@ -29,7 +32,7 @@
             ♠️
           </div>
           <div class="flip-card-back">
-            Spade Tile
+            TYCOON
           </div>
         </div>
       </div>
@@ -40,7 +43,7 @@
             ⚪
           </div>
           <div class="flip-card-back">
-            Circle Tile
+            PUZZLE
           </div>
         </div>
       </div>
@@ -51,7 +54,7 @@
             🀄
           </div>
           <div class="flip-card-back">
-            Red Dragon Tile
+            RPG
           </div>
         </div>
       </div>
@@ -61,12 +64,33 @@
             🐉
           </div>
           <div class="flip-card-back">
-            Green Dragon Tile
+            RACING
           </div>
         </div>
       </div>
     </div>
 </body>
+<script>
+  document.getElementById('tile1').onclick = () => {
+    alert('You clicked the Spade Tile!');
+    addImageToTile('tile1', 'assets/spade.png');
+  };
+
+  document.getElementById('tile2').onclick = () => {
+    alert('You clicked the Circle Tile!');
+    addImageToTile('tile2', 'assets/circle.png');
+  };
+
+  document.getElementById('tile3').onclick = () => {
+    alert('You clicked the Red Dragon Tile!');
+    addImageToTile('tile3', 'assets/red_dragon.png');
+  };
+
+  document.getElementById('tile4').onclick = () => {
+    alert('You clicked the Green Dragon Tile!');
+    addImageToTile('tile4', 'assets/green_dragon.png');
+  };
+</script>
 <body>
 <div id="content"> 
 	<a href="https://haileyhyun.github.io/hwang_c1ix_f24/"><img src="assets/6 copy 3.png" width="50" height="50" alt="index page"></a>
