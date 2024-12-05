@@ -13,8 +13,8 @@
 
 .second {
   position: absolute;
-  top: 420px;
-  left: 670px;
+  top: 320px;
+  left: 650px;
   position: fixed;
 }
 
@@ -55,6 +55,6 @@ body{
   font-family: "Mynerve";
   font-size: 20px;
   position: absolute;
-  top: 70px;
-  left: 500px;
+  top: 440px;
+  left: 660px;
 }
