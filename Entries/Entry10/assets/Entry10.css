@@ -30,8 +30,8 @@
 }
 #content img {
   position: absolute;
-  top: 25px;
-  left: 25px;
+  bottom: 25px;
+  right: 25px;
   position: fixed;}
   
   img:hover {
@@ -42,3 +42,19 @@
     width: 230;
     height: 150;
   }
+
+  .first, .second, .third {
+    margin: 10px;
+}
+
+img {
+    cursor: pointer;
+}
+
+body{
+  font-family: "Mynerve";
+  font-size: 20px;
+  position: absolute;
+  top: 70px;
+  left: 500px;
+}
