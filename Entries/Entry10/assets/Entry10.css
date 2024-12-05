@@ -53,6 +53,13 @@
   position: fixed;
 }
 
+.eighth {
+  position: absolute;
+  top: 505px;
+  left: 495px;
+  position: fixed;
+}
+
 #content {
   position: relative;
 }
