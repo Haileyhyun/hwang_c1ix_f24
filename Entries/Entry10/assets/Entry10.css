@@ -39,6 +39,13 @@
   position: fixed;
 }
 
+.sixth {
+  position: absolute;
+  top: 585px;
+  left: 840px;
+  position: fixed;
+}
+
 #content {
   position: relative;
 }
