@@ -6,35 +6,76 @@
     <link rel="stylesheet" type="text/css" href="assets/Entry10.css">
     <link rel="icon" type="image/png" href="assets/Frame 1.png">
     <title>Nowadays</title>
+
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background-image: url('assets/3.jpg');
+            background-size: 50%;
+            background-repeat: repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .first, .second, .third {
+            margin: 10px;
+        }
+
+        img {
+            cursor: pointer;
+        }
+    </style>
 </head>
-
-  <style>
-    body, html {
-       height: 100%;
-       margin: 0;
-     }
-     
-     body {
-   background-image: url('assets/2.jpg');
-   background-size: 100%;
-   background-repeat:repeat;
-   background-attachment: fixed;
- }
- 
-     </style>
-
 <body>
+    <div class="first">
+        <a><img id="img1" src="assets/Untitled-1.png" width="160" height="150" alt="keyring"></a>
+    </div>
+    <div class="second">
+        <img id="img2" src="assets/3.png" width="230" height="150" alt="keyring">
+    </div>
+    <div class="third">
+        <img id="img3" src="assets/4.png" width="230" height="150" alt="keyring">
+    </div>
+  </div>
 
-  <div class="first">
-    <img src="assets/1.jpg" width="230" height="150" alt="selfie with volunteer members at film festival"></div>
-<div class="second">
-    <img src="assets/3.png" width="230" height="150" alt="selfie with volunteer members at art festival"></div>
-<div class="third">
-    <img src="assets/4.png" width="230" height="150" alt="selfie with volunteer members at film festival"></div>
+    <div id="content">
+        <a href="https://haileyhyun.github.io/hwang_c1ix_f24/">
+            <img src="assets/6 copy 4.png" width="50" height="50" alt="index page">
+        </a>
+    </div>
+
+    <script>
+      
+        const images = [
+            {
+                id: "img1",
+                src1: "assets/5.png",
+                src2: "assets/Untitled-1.png"
+            },
+            {
+                id: "img2",
+                src1: "assets/2.png",
+                src2: "assets/Untitled-1.png"
+
+            },
+            {
+                id: "img3",
+                src1: "assets/2 copy.png",
+                src2: "assets/Untitled-1.png"
+            }
+        ];
+
+        images.forEach(image => {
+        const imgElement = document.getElementById(image.id);
+        imgElement.addEventListener("click", () => {
+            // Toggle between original and alternate image
+            imgElement.src = imgElement.src.endsWith(image.src1) ? image.src2 : image.src1;
+        });
+    });
+    </script>
 </body>
-    <body>
-      <div id="content"> 
-        <a href="https://haileyhyun.github.io/hwang_c1ix_f24/"><img src="assets/6 copy 4.png" width="50" height="50" alt="index page"></a>
-      </div>
-      </body>
 </html>

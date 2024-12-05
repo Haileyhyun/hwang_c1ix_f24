@@ -1,88 +1,13 @@
-body {
-    background-color: #eeeeee;
-        font-family: "Lacquer", system-ui;
-        font-weight: 400;
-        font-style: normal;    
-      text-align: center;
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  cursor: pointer;
 }
-
-h1 {
-    font-family: "Lacquer", system-ui;
-    color: rgb(140, 176, 144);
-    font-size: 70px;
-}
-
-.heading {
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-}
-
-.images {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    * {box-sizing: border-box}
-
-    .container {
-      position: relative;
-      width: 50%;
-      max-width: 300px;
-    }
-    
-    /* Make the image to responsive */
-    .image {
-      display: block;
-      width: 100%;
-    }
-    
-    .overlay {
-      position: absolute;
-      bottom: 0;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.5); 
-      color: #f1f1f1;
-      width: 100%;
-      transition: .5s ease;
-      opacity:0;
-      color: white;
-      font-size: 20px;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .container:hover .overlay {
-      opacity: 1;
-    }
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #eeeeee;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #e4e4e4;
-    color: black;
-  }
-  
-  .topnav a.active {
-    color: rgb(0, 0, 0);
-  }
 
   .first {
     position: absolute;
-    top: 55px;
-    left: 240px;
+    top: 305px;
+    left: 470px;
     position: fixed;
 }
 
@@ -109,3 +34,11 @@ h1 {
   left: 25px;
   position: fixed;}
   
+  img:hover {
+    opacity: 0.5;
+  }
+
+  .pictures {
+    width: 230;
+    height: 150;
+  }
