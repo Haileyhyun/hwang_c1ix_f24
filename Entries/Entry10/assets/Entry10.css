@@ -25,6 +25,13 @@
   position: fixed;
 }
 
+.fourth {
+  position: absolute;
+  top: 120px;
+  left: 800px;
+  position: fixed;
+}
+
 #content {
   position: relative;
 }
