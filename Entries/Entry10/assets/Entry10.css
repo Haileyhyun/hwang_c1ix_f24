@@ -32,6 +32,13 @@
   position: fixed;
 }
 
+.fifth {
+  position: absolute;
+  top: 370px;
+  left: 926px;
+  position: fixed;
+}
+
 #content {
   position: relative;
 }
@@ -60,8 +67,9 @@ img {
 
 body{
   font-family: "Mynerve";
+  position: fixed;
+  color: rgb(107, 106, 106);
   font-size: 20px;
-  position: absolute;
   top: 450px;
   left: 648px;
 }
