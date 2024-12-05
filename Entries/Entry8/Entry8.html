@@ -40,19 +40,6 @@
     // Dynamically update tile contents and add interactivity
     const tileContainer = document.getElementById('tileContainer');
 
-    // Helper function to add an image below a tile
-    const addImageToTile = (tileId, imageUrl) => {
-    const tile = document.getElementById(tileId);
-    if (!tile.querySelector('img')) { // Prevent duplicate images
-      const img = document.createElement('img');
-      img.src = imageUrl;
-      img.style.width = '70px'; // Explicit width
-      img.style.height = '100px'; // Explicit height
-      img.style.marginTop = '15px'; // Space between text and image
-      tile.appendChild(img);
-    }
-  };
-
     document.getElementById('tile1').onclick = () => {
       alert('You clicked the Spade Tile!');
       addImageToTile('tile1', 'assets/1.jpg');
