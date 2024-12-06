@@ -1,23 +1,249 @@
 
-h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(244, 138, 194);
-    font-size: 70px;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
-    border-right: 5px solid black;
+:root {
+  --text: darkslategrey;
+  --border: lightgrey;
+  --accent: teal;
+  --bg: #dce3e1;
+  --gradientTop: white;
+  --gradientBottom: rgb(240, 248, 255, .8);
 }
-.permanent-marker-regular {
-    font-family: "Permanent Marker", cursive;
-    font-weight: 400;
-    font-style: normal;}
+header {
+  background: url('***light mode banner image***');
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: white;
+    --border: #5a7678;
+    --accent: #74C365;
+    --bg: rgb(0,60,60,.8);
+    --gradientBottom: rgb(0, 50, 60);
+    --gradientTop: darkslategrey;
+    a:link { color: lightblue; }
+  }
+  header {
+    background: url('***dark mode banner image***');
+  }
+}
+/* end dark mode styling */
 
-    #content {
-        position: relative;
-      }
-      #content img {
-        position: absolute;
-        top: 40px;
-        left: 40px;
-        position: fixed;}
+
+* { 
+box-sizing: border-box;
+}
+body {
+padding: 10px;
+font-family: "Flamenco", system-ui;
+font-weight: 400;
+font-style: normal;;
+color: var(--text);
+
+background-color: var(--gradientTop);
+background-image:  linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(30deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(150deg, var(--bg) 12%, transparent 12.5%, transparent 87%, var(--bg) 87.5%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg)), linear-gradient(60deg, var(--bg) 25%, transparent 25.5%, transparent 75%, var(--bg) 75%, var(--bg));
+background-size: 20px 35px;
+background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px;
+}
+
+
+.container {
+max-width: 55rem;
+margin: 5vw auto 12px auto;
+border: 6px ridge var(--border);
+outline: 3px solid var(--gradientTop);
+outline-offset: 4px;
+border-radius: 10px;
+display: flex;
+flex-wrap: wrap;
+padding: 5px;
+gap: 5px;
+
+background-color: var(--gradientBottom);
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(--gradientBottom) 9px ), repeating-linear-gradient( var(--bg), var(--bg));
+}
+
+.small { flex: 1 1 9%; }
+.large { flex: 1 1 82%; }
+.full { flex: 1 1 100%; }
+.half { flex: 1 1 49%; }
+
+
+header {
+background-size: cover;
+background-position: center;
+width: 100%;
+height: 120px; /* change banner height here*/
+border: 2px ridge var(--border);
+border-radius: 5px;
+position: relative;
+}
+header span {
+font-size: 2.5rem;
+position: absolute;
+bottom: 0;
+right: 10px;
+margin: 10px;
+font-weight: bold;
+text-shadow: 1px 1px var(--text),
+  -1px 1px var(--text),
+  1px -1px var(--accent),
+  -1px -1px var(--accent);
+color: var(--gradientTop);
+}
+
+
+nav {
+border: 2px ridge var(--border);
+border-radius: 5px;
+padding: 5px;
+background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+}
+nav div {
+text-align: center;
+font-size: 1.25rem;
+margin: 5px 5px 10px 5px;
+}
+nav a {
+display: block;
+margin: 5px;
+background: linear-gradient(to right,var(--bg),var(--gradientBottom));
+border-radius: 5px;
+padding: 2px 7px;
+text-decoration: none;
+}
+nav a:link, nav a:visited { 
+color: var(--text);
+}
+nav a:hover, nav a:focus {
+background: linear-gradient(to right,var(--bg), var(--gradientBottom), var(--gradientTop));
+}
+
+/* optional button styling like in the preview */
+div.small > img {
+display: block;
+margin: 5px auto;
+border:2px ridge var(--border);
+border-radius: 5px;
+}
+
+
+section {
+border: 2px ridge var(--border);
+border-radius: 5px;
+background: linear-gradient(var(--gradientTop),var(--gradientBottom));
+}
+
+h1, h2, h3, h4, h5, h6, p  { 
+margin: 5px;
+line-height: 1.2;
+}
+h1 { 
+font-size: 1.4rem;
+letter-spacing: 2px;
+font-weight: normal;
+text-align: center;
+border-bottom: 2px ridge var(--border);
+padding-bottom: 5px;
+}
+h2 { 
+font-size: 1.25rem;
+font-weight: normal;
+text-align: center;
+}
+h3 { 
+font-size: 1.1rem;
+}
+h4 { 
+font-size: 1rem;
+color: var(--accent);
+padding-left: 12px;
+}
+
+/* prevents overflow on smaller screens */
+img { max-width: 100%; }
+pre { overflow-x: auto; }
+
+
+a:hover, a:focus {
+font-style: italic;
+}
+a:visited {
+color: var(--accent);
+}
+
+#content {
+  position: relative;
+}
+#content img {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  position: fixed;}
+
+  .first {
+    position: absolute;
+    top: 265px;
+    left: 560px;
+    position: fixed;
+}
+
+.second {
+  position: absolute;
+  top: 310px;
+  left: 800px;
+  position: fixed;
+}
+
+.third {
+  position: absolute;
+  top: 370px;
+  left: 580px;
+  position: fixed;
+}
+
+.fourth {
+  position: absolute;
+  top: 440px;
+  left: 795px;
+  position: fixed;
+}
+
+.fifth {
+  position: absolute;
+  top: 540px;
+  left: 645px;
+  position: fixed;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.image-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  display: none;
+}
+
+.image-overlay img {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.close-overlay {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+img:hover {
+  opacity: 0.5;
+}
