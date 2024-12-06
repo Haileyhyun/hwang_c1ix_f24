@@ -65,9 +65,7 @@
 <h1><div class="centered">
   <a>Babyhood</div></h1></a>
 
-<div class="one">
-    <a href="https://haileyhyun.github.io/hwang_c1ix_f24/Entries/Entry1/assets/linking1.html"><img src="assets/1.jpg" width="200" height="200" alt="calico critters toy box"></div></a>
-
+</div>
       <div class="two">
       <div class="container">
         <img src="assets/3.png" alt="Avatar" width="250" height="160" alt="calico critters characters">
@@ -84,5 +82,44 @@
         </div>
       </div>
     </div>
+
+    <body>
+      <div class="one">
+        <img id="img1" src="assets/1.jpg" width="200" height="200" alt="calico critters toy box">
+    </div>
+
+    <div class="image-overlay" id="image-overlay">
+        <span class="close-overlay" id="close-overlay">&times;</span>
+        <img id="overlay-image" src="assets/3.jpg" alt="Enlarged Image">
+    </div>
+  
+      <script>
+          const images = [
+          {
+              id: "img1",
+              src1: "assets/3.jpg",
+              src2: "assets/1.jpg"
+          },
+        ]
+        const imgElement = document.getElementById("img1");
+        const overlay = document.getElementById("image-overlay");
+        const overlayImage = document.getElementById("overlay-image");
+        const closeOverlay = document.getElementById("close-overlay");
+
+        imgElement.addEventListener("click", () => {
+          overlayImage.src = "assets/3.jpg"; 
+          overlay.style.display = "flex";
+        });
+
+        closeOverlay.addEventListener("click", () => {
+            overlay.style.display = "none";
+        });
+
+        overlay.addEventListener("click", (e) => {
+            if (e.target === overlay) {
+                overlay.style.display = "none";
+            }
+        });
+    </script>
 
 </html>
