@@ -6,7 +6,7 @@
 }
 .second {
   position: absolute;
-  top: 160px;
+  top: 190px;
   left: 442px;
   position: fixed;
 }
@@ -26,4 +26,26 @@ p {
   font-size: 20px;
   position: absolute;
 }
+.container {
+  position: relative;
+  width: 100%;
+}
+.overlay {
+  position: center;
+  color: white;
+  position: absolute;
+  bottom: 30px;
+  left: 160px;
+  right: 0;
+  background-color: transparent;
+  overflow: hidden;
+  width: 1000px;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  height: 100%;
+}
+
   

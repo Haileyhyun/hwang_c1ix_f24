@@ -6,41 +6,56 @@
     <link rel="stylesheet" type="text/css" href="assets/Entry2.css">
     <link rel="icon" type="image/png" href="assets/Frame 1.png">
     <title>Travel</title>
-</head>
-<style>
-   body, html {
-      height: 100%;
-      margin: 0;}
-    
-    body {
-  background-image: url('assets/1.jpg');
-  background-size: 100%;
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  position: fixed;
-  animation: backwards;
-}
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+        }
 
+        body {
+            background-image: url('assets/1.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            position: fixed;
+            animation: fadeIn 1s ease-in forwards; 
+        }
+        a {
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        /* Keyframes for fade-in effect */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
     </style>
-    </head>
-<br>
-
-
-
-<div id="content"> 
-	<a href="https://haileyhyun.github.io/hwang_c1ix_f24/"><img src="assets/6 copy 2.png" width="50" height="50" alt="press to go back to the index page"></a>
-</div>
-
-
+</head>
 <body>
-  <div class="first">
-  <img src="assets/2.png" width="900" height="700" alt="system message"></div>
-        <div class="second">
-            <img src="assets/12.png" width="600" height="450" alt="hand drawings of my travel memories"></div>
-</div>
-</body>
-<body>
-  <a href="https://haileyhyun.github.io/hwang_c1ix_f24/Entries/Entry3/entry3.html"><p> OK</p></a>
+    <div id="content"> 
+        <a href="https://haileyhyun.github.io/hwang_c1ix_f24/">
+            <img src="assets/6 copy 2.png" width="50" height="50" alt="press to go back to the index page">
+        </a>
+    </div>
+    <div class="first">
+        <img src="assets/2.png" width="900" height="700" alt="system message">
+    </div>
+    <div class="second">
+        <div class="container">
+          <img src="assets/12.png" width="600" height="450" alt="hand drawings of my travel memories">
+          <div class="overlay">
+            <div class="text">Hand drawn post stamps of my travel memories</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="https://haileyhyun.github.io/hwang_c1ix_f24/Entries/Entry3/entry3.html">
+        <p>OK</p>
+    </a>
 </body>
 </html>
