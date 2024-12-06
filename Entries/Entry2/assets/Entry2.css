@@ -19,4 +19,11 @@
   right: 35px;
   position: fixed;}
 
+p {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  top: 648px;
+  left: 585px;
+  font-size: 20px;
+  position: absolute;
+}
   
