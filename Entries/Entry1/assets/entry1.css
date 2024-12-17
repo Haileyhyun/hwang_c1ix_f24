@@ -34,7 +34,11 @@ a:hover {
 }
 
 .images {
-    position: fixed;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 100px;
+      max-width: 100%;
+      padding: 20px;
   }
   
   img:hover {

@@ -23,27 +23,39 @@ body {
   --c: 0;
   display: flex;
   margin: auto;
-  width: 300px;
-  /*1* let pointer event go trough pages of lower Z than .book */
+  width: 400px; 
   pointer-events: none;
   transform-style: preserve-3d;
   transition: translate 1s;
   translate: calc(min(var(--c), 1) * 50%) 0%;
-  /* DEMO ONLY: incline on the X axis for pages preview */
   rotate: 1 0 0 30deg;
 
-  [name^=book] { display: none; }
-  &:has(#c0:checked) { --c:0; }
-  &:has(#c1:checked) { --c:1; }
-  &:has(#c2:checked) { --c:2; }
-  &:has(#c3:checked) { --c:3; }
-  &:has(#c4:checked) { --c:4; }
-  &:has(#c5:checked) { --c:5; }
+  [name^=book] {
+    display: none;
+  }
+  &:has(#c0:checked) {
+    --c: 0;
+  }
+  &:has(#c1:checked) {
+    --c: 1;
+  }
+  &:has(#c2:checked) {
+    --c: 2;
+  }
+  &:has(#c3:checked) {
+    --c: 3;
+  }
+  &:has(#c4:checked) {
+    --c: 4;
+  }
+  &:has(#c5:checked) {
+    --c: 5;
+  }
 }
 
 .page {
-  --thickness: 5;
-  /* PS: Don't go below thickness 0.4 or the pages might transpare */
+  --thickness: 7; /* Increased thickness for larger pages */
+  /* PS: Don't go below thickness 0.4 or the pages might transpire */
   flex: none;
   display: flex;
   width: 100%;
@@ -57,7 +69,7 @@ body {
     transform 1s,
     rotate 1s ease-in calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
   translate: calc(var(--i) * -100%) 0px 0px;
-  transform: translateZ( calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * 1px)));
+  transform: translateZ(calc((var(--c) - var(--i) - 0.5) * calc(var(--thickness) * 1px)));
   rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
 
   label {
@@ -78,13 +90,11 @@ body {
   }
 }
 
-
-
 .front,
 .back {
   flex: none;
   width: 100%;
-  padding: 2rem;
+  padding: 3rem; /* Increased padding for better proportions */
   backface-visibility: hidden;
   background-color: #fff;
   /* Fix backface visibility Firefox: */
@@ -103,5 +113,6 @@ body {
 #content img {
   position: absolute;
   bottom: 30px;
-  right:30px;
-  position: fixed;}
+  right: 30px;
+  position: fixed;
+}
