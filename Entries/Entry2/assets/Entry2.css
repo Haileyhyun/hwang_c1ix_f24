@@ -1,3 +1,20 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+a {
+  animation: fadeIn 1s ease-in forwards;
+}
+
+/* Keyframes for fade-in effect */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
 .first {
   position: absolute;
   top: 60px;
