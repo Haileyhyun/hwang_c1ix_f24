@@ -63,7 +63,8 @@ background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, var(
 .small { flex: 1 1 9%; }
 .large { flex: 1 1 82%; }
 .full { flex: 1 1 100%; }
-.half { flex: 1 1 49%; }
+.half { flex: 1 1 49%; 
+  cursor: pointer; }
 
 
 header {
