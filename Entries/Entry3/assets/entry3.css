@@ -1,109 +1,76 @@
-body, html {
-    height: 100%;
+body {
     margin: 0;
-}
-h1 {
-    font-size: 30px;
-    color: rgb(157, 149, 146);
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    margin-bottom: 20px;
-}
-
-.images {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-}.images img {
-    width: 300px;
-    height: 180px;
-    transition: opacity 0.3s ease;
-}
-
-.images img:hover {
-    opacity: 0.5;
-}
-
-.text {
-    margin: 20px 0;
-    text-align: center;
-    font-size: 18px;
+    font-family: "Delius Unicase", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url('assets/3.jpg');
+    background-size: 100%;
+    background-repeat:repeat;
+    background-attachment: fixed;
     color: #333;
 }
 
-.animation {
-    font-size: 24px;
-    color: #555;
+.container {
     display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-    animation: bounce 2s infinite;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-}
-
-#content {
-    margin-top: 20px;
-}
-#content img {
-    width: 50px;
-    height: 50px;}
-
-body{
+header {
+    background-color: #ffffff;
+    color: rgb(26, 205, 255);
     text-align: center;
-    }
-    h1{font-family: Arial, Helvetica, sans-serif;
-        color: rgb(116, 116, 122);
-        font-size: 50px;
-        padding: 5px 5px 5px 5px;
+    padding: 50px;
+    font-size: 2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .image:hover {
-            align-items: center;
-            width: 20%;
-            height: 20%;
-            top: 90%;
-            left: 50%;
-            background-color: #97c4f5;
-            border-radius: 200px;
-            transform: translate(-50%, -50%);
-            image:hover {
-            filter: opacity(50%);
-          }
-            background-color: #fff;
-            font-family: Helvetica;
-            margin: 0;
-        }
-        
-        o {left: 300%;}
-        
-        }
+nav {
+    background-color: #00a3d0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        .marquee {
-            position: absolute;
-            white-space: nowrap;
-            -webkit-animation: rightThenLeft 10s linear;
-            animation-iteration-count: infinite;
-        }
-        
-        @-webkit-keyframes rightThenLeft {
-            0%   {left: 20%;}
-            50%  {left: 70%;}
-            100% {left: 20%;}
-        }
+nav a {
+    color: #333;
+    text-decoration: none;
+    padding: 5px 15px;
+    border: 2px solid #FFF3E6;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
 
-        #content {
-            position: relative;
-          }
-          #content img {
-            position: absolute;
-            top: 25px;
-            left: 25px;
-            position: fixed;}
+nav a:hover {
+    background-color: #FFF3E6;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-image: url('https://www.transparenttextures.com/patterns/soft-paper.png');
+}
+
+.memory {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    text-align: center;
+}
+
+.memory img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
