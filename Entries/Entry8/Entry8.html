@@ -10,7 +10,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
   <title>Games</title>
   <style>
-    
     body {
       font-family: 'Arial', sans-serif;
       background: url('assets/2.png') no-repeat center center fixed;
@@ -18,82 +17,88 @@
       color: #333;
       text-align: center;
       padding: 50px;
+      transition: background 0.5s ease;
     }
   </style>
 </head>
 <body>
   <a><h1>Online Games</h1></a>
 
-  <body>
-    <div class="tile-container" id="tileContainer">
-      <div class="flip-card" id="tile1">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            ♠️
-          </div>
-          <div class="flip-card-back">
-            TYCOON
-          </div>
-        </div>
-      </div>
-  
-      <div class="flip-card" id="tile2">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            ⚪
-          </div>
-          <div class="flip-card-back">
-            PUZZLE
-          </div>
-        </div>
-      </div>
-  
-      <div class="flip-card" id="tile3">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            🀄
-          </div>
-          <div class="flip-card-back">
-            RPG
-          </div>
-        </div>
-      </div>
-      <div class="flip-card" id="tile4">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            🐉
-          </div>
-          <div class="flip-card-back">
-            RACING
-          </div>
-        </div>
+  <div class="tile-container" id="tileContainer">
+    <div class="flip-card" id="tile1">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">♠️</div>
+        <div class="flip-card-back">TYCOON</div>
       </div>
     </div>
-</body>
-<script>
-  document.getElementById('tile1').onclick = () => {
-    alert('A game where I am in charge of a business/industry!');
-    addImageToTile('tile1', 'assets/spade.png');
-  };
 
-  document.getElementById('tile2').onclick = () => {
-    alert('Put pieces together!');
-    addImageToTile('tile2', 'assets/circle.png');
-  };
+    <div class="flip-card" id="tile2">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">⚪</div>
+        <div class="flip-card-back">PUZZLE</div>
+      </div>
+    </div>
 
-  document.getElementById('tile3').onclick = () => {
-    alert('Players take on the role of a character in a fictional world and interact with the game through that character!');
-    addImageToTile('tile3', 'assets/red_dragon.png');
-  };
+    <div class="flip-card" id="tile3">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">🀄</div>
+        <div class="flip-card-back">RPG</div>
+      </div>
+    </div>
 
-  document.getElementById('tile4').onclick = () => {
-    alert('Player controls a vehicle and participates in a race!');
-    addImageToTile('tile4', 'assets/green_dragon.png');
-  };
-</script>
-<body>
-<div id="content"> 
-	<a href="https://haileyhyun.github.io/hwang_c1ix_f24/"><img src="assets/6 copy 3.png" width="50" height="50" alt="index page"></a>
-</div>
+    <div class="flip-card" id="tile4">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">🐉</div>
+        <div class="flip-card-back">RACING</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const body = document.querySelector('body');
+
+    document.getElementById('tile1').onmouseover = () => {
+      body.style.background = "url('assets/1.jpg') no-repeat center center fixed";
+      body.style.backgroundSize = "cover";
+    };
+
+    document.getElementById('tile2').onmouseover = () => {
+      body.style.background = "url('assets/2.jpg') no-repeat center center fixed";
+      body.style.backgroundSize = "cover";
+    };
+
+    document.getElementById('tile3').onmouseover = () => {
+      body.style.background = "url('assets/3.jpg') no-repeat center center fixed";
+      body.style.backgroundSize = "cover";
+    };
+
+    document.getElementById('tile4').onmouseover = () => {
+      body.style.background = "url('assets/4.jpg') no-repeat center center fixed";
+      body.style.backgroundSize = "cover";
+    };
+
+    document.querySelectorAll('.flip-card').forEach(card => {
+      card.onmouseleave = () => {
+        body.style.background = "url('assets/2.png') no-repeat center center fixed";
+        body.style.backgroundSize = "cover";
+      };
+    });
+
+    document.getElementById('tile1').onclick = () => {
+      alert('A game where I am in charge of a business/industry!');
+    };
+
+    document.getElementById('tile2').onclick = () => {
+      alert('Put pieces together!');
+    };
+
+    document.getElementById('tile3').onclick = () => {
+      alert('Players take on the role of a character in a fictional world and interact with the game through that character!');
+    };
+
+    document.getElementById('tile4').onclick = () => {
+      alert('Player controls a vehicle and participates in a race!');
+    };
+  </script>
 </body>
 </html>
